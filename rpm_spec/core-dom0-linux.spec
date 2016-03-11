@@ -113,6 +113,10 @@ install -D dom0-updates/qfile-dom0-unpacker $RPM_BUILD_ROOT/usr/libexec/qubes/qf
 install -m 0644 -D dom0-updates/qubes.ReceiveUpdates $RPM_BUILD_ROOT/etc/qubes-rpc/qubes.ReceiveUpdates
 install -m 0664 -D dom0-updates/qubes.ReceiveUpdates.policy $RPM_BUILD_ROOT/etc/qubes-rpc/policy/qubes.ReceiveUpdates
 
+### GetTime
+install -m 0644 -D time/qubes.GetTime $RPM_BUILD_ROOT/etc/qubes-rpc/qubes.GetTime
+install -m 0664 -D time/qubes.GetTime.policy $RPM_BUILD_ROOT/etc/qubes-rpc/policy/qubes.GetTime
+
 install -d $RPM_BUILD_ROOT/var/lib/qubes/updates
 
 # Qrexec
